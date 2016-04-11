@@ -1,0 +1,291 @@
+<head>
+<style type="text/css">
+	body{
+		margin:0px;
+		background:#F0F8FF;
+	}
+	.header-cont {
+		width:100%;
+		position:fixed;
+		top:0px;
+	}
+	.header {
+		height:50px;
+		background:#F0F0F0;
+		border:1px solid #CCC;
+		width:960px;
+		margin:0px auto;
+	}
+	.content {
+		width:960px;
+		background: #F0F0F0;
+		border: 1px solid #CCC;
+		height: 700px;
+		margin: 20px auto;
+	}
+	
+	img {
+		position: relative;
+		left: 180px;
+		top: 100px;
+		width: 600px;
+		height: 200px;
+	}
+	
+	.MenuItems {
+	
+		width: 20px;
+		margin: 107px auto;
+		padding: 195px;
+		background-color: rgba(250,250,250,0.5);
+		border-radius: 5px;
+		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2), 
+					inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+		border: 1px solid rgba(0, 0, 0, 0.3);
+		visibility: visible
+	}
+	
+	
+	.round-button {
+		width:25%;
+		
+	}
+	
+	.round-button-circle {
+		width: 180%;
+		height:25px;
+		padding-bottom: 70%;
+		border-radius: 50%;
+		border:10px solid #cfdcec;
+		overflow:hidden;
+		
+		background: #4679BD; 
+		box-shadow: 0 0 3px gray;
+	}
+	
+	.round-button-circle:hover {
+		background:#30588e;
+	}
+	
+	.round-button a {
+		display:block;
+		float:left;
+		width:100%;
+		padding-top:10%;
+		padding-bottom:50%;
+		line-height:1em;
+		margin-top:-0.5em;
+		
+		text-align:center;
+		color:#e2eaf3;
+		font-family:Verdana;
+		font-size:1.2em;
+		font-weight:bold;
+		text-decoration:none;
+	}
+	.list1{
+		position: absolute;
+		float:left;
+		width:300px;
+		top: 340px;
+		left: 490px;
+		visibility: visible
+	}
+	
+	.list2{
+		position: absolute;
+		float:right;
+		width:300px;
+		top: 340px;
+		right: 340px;
+		visibility: visible
+		
+	}
+	
+	.list3{
+		position: absolute;
+		float:left;
+		width:300px;
+		top: 340px;
+		left: 490px;
+		visibility: hidden
+	}
+	
+	.list4{
+		position: absolute;
+		float:right;
+		width:300px;
+		top: 340px;
+		right: 340px;
+		visibility: hidden
+		
+	}
+	
+	
+	.square-button {
+		width:25%;
+	}
+	
+	.square-button-square {
+		width: 100%;
+		height:25px;
+		padding-bottom: 70%;
+		border-radius: 70%;
+		border:10px solid #cfdcec;
+		overflow:hidden;
+		
+		background: #4679BD; 
+		box-shadow: 0 0 3px gray;
+	}
+	
+	.square-button-square:hover {
+		background:#30588e;
+	}
+	
+	.square-button a {
+		display:block;
+		float:left;
+		width:100%;
+		padding-top:37%;
+		padding-bottom:50%;
+		line-height:1em;
+		margin-top:-0.5em;
+		
+		text-align:center;
+		color:#e2eaf3;
+		font-family:Verdana;
+		font-size:1.2em;
+		font-weight:bold;
+		text-decoration:none;
+	}
+	
+	
+	.myButton {
+		-moz-box-shadow: 0px 0px 0px 2px #9fb4f2;
+		-webkit-box-shadow: 0px 0px 0px 2px #9fb4f2;
+		box-shadow: 0px 0px 0px 2px #9fb4f2;
+		background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7892c2), color-stop(1, #476e9e));
+		background:-moz-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+		background:-webkit-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+		background:-o-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+		background:-ms-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+		background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7892c2', endColorstr='#476e9e',GradientType=0);
+		background-color:#7892c2;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
+		border-radius:10px;
+		border:1px solid #4e6096;
+		display:inline-block;
+		cursor:pointer;
+		color:#ffffff;
+		font-family:Arial;
+		font-size:19px;
+		padding:12px 9px;
+		text-decoration:none;
+		text-shadow:0px 1px 0px #283966;
+	}
+	
+	.myButton:hover {
+		background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #476e9e), color-stop(1, #7892c2));
+		background:-moz-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+		background:-webkit-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+		background:-o-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+		background:-ms-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+		background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#476e9e', endColorstr='#7892c2',GradientType=0);
+		background-color:#476e9e;
+	}
+	
+	.myButton:active {
+		position:absolute;
+		top:10px;
+	}
+	
+
+	
+	
+	
+	</style>
+</head>
+<body>
+
+<div class="content">
+
+	<img id="myImage" onclick = "changeImage();playSound()" src = "NotBittenLogo.jpg">
+	<audio id="audio" src="Cartoon_Bite_Sound_Effect.ogg" ></audio>
+	
+	<div class="MenuItems">
+	
+		
+	<li class ="list1" id = "1" >
+	<div class="round-button"><div class="round-button-circle"><a href="" class="round-button">3-Piece Chicken Tenders</a></div></div>
+	<div class="round-button"><div class="round-button-circle"><a href="" class="round-button">Buffalo Chicken Cheesesteak</a></div></div>
+	<div class="round-button"><div class="round-button-circle"><a href="" class="round-button">Chicken Cheese Steak</a></div></div>
+	<a href="#" class="button next" onclick = "nextPage()">Next</a>
+	</li>
+	<li class ="list2" id = "2">
+	<div class="round-button"><div class="round-button-circle"><a href="" class="round-button">5-Piece Chicken Tenders</a></div></div>
+	<div class="round-button"><div class="round-button-circle"><a href="" class="round-button">Cheese Steak Sandwich</a></div></div>
+	<div class="round-button"><div class="round-button-circle"><a href="" class="round-button">Cheeseburger</a></div></div>
+	<div class="round-button"><div class="round-button-circle"><a href="" class="round-button">Grilled Chicken Sandwich</a></div></div>
+	</li>
+		
+	<li class ="list3" id = "3">
+	<div class="round-button"><div class="round-button-circle"><a href="" class="round-button">French Fries</a></div></div>
+	<div class="round-button"><div class="round-button-circle"><a href="" class="round-button">Drink</a></div></div>
+	</li>
+	<li class ="list4" id = "4">
+	<div class="round-button"><div class="round-button-circle"><a href="" class="round-button">Double Cheeseburger</a></div></div>
+	<div class="round-button"><div class="round-button-circle"><a href="" class="round-button">Atomic Burger</a></div></div>
+	</li>
+
+	
+	
+	
+	
+	</div>
+	
+	<script>
+	
+
+	
+	var image = document.getElementById('myImage');
+	var sound = document.getElementById('audio');
+	var temp = document.getElementsByClassName("loginform");
+	var temp1 = document.getElementsByClassName("signup");	
+	
+	var new1 = document.getElementById("3");
+	var new2 = document.getElementById("4");
+	var new3 = document.getElementById("1");
+	var new4 = document.getElementById("2");
+	
+
+		function changeImage() {
+			image.src = "BittenLogo.png";
+			sound.play();
+			setTimeout(stopSound, 1000);
+		}
+		
+		function stopSound() {
+			sound.src = "";
+		}
+		
+		function function1(){
+			temp.style.visibility = 'hidden';
+			temp1.style.visibility = 'visible';
+		}
+		
+		function nextPage(){
+		new1.style.visibility = 'visible';
+		new2.style.visibility = 'visible';
+		new3.style.visibility = 'hidden';
+		new4.style.visibility = 'hidden';
+		}
+		
+</script>
+
+</div>
+
+
+</body>
