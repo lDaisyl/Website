@@ -1,0 +1,158 @@
+<head>
+<link rel="apple-touch-icon" href="appicon.png" />
+		<link rel="apple-touch-startup-image" href="startup.png">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+<style type="text/css">
+	body{
+		margin:0px;
+		background:#F0F8FF;
+	}
+	.header-cont {
+		width:100%;
+		position:fixed;
+		top:0px;
+	}
+	.header {
+		height:50px;
+		background:#F0F0F0;
+		border:1px solid #CCC;
+		width:960px;
+		margin:0px auto;
+	}
+	.content {
+		width:960px;
+		background: #F0F0F0;
+		border: 1px solid #CCC;
+		height: 754px;
+		margin: 20px auto;
+	}
+	
+	img {
+		position: relative;
+		left: 180px;
+		top: 50px;
+		width: 600px;
+		height: 200px;
+	}
+	
+	.loginform {
+	
+		width: 300px;
+		margin: 104px auto;
+		padding: 20px;
+		background-color: rgba(250,250,250,0.5);
+		border-radius: 5px;
+		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2), 
+					inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+		border: 1px solid rgba(0, 0, 0, 0.3);
+		visibility: visible
+		
+	}
+	
+	.button3{
+		position: relative;
+		top: 60px;
+		right: 120px;
+	}
+	
+	
+</style>
+</head>
+<body>
+
+<div class="content">
+
+	<img id="myImage" onclick = "changeImage();playSound()" src = "NotBittenLogo.jpg">
+	<audio id="audio" src="Cartoon_Bite_Sound_Effect.ogg" ></audio>
+	
+	<section class="loginform">
+	<form name="login" action="index_submit" method="get" accept-charset="utf-8">
+		<ul id = "L">
+			<label for="usermail">Username</label>
+			<input type="email" name="usermail" placeholder="yourname@ursinus.edu" required> <br>
+			<label for="password">Password</label>
+			<input type="password" name="password" placeholder="password" required> <br>
+
+			<a href="ForgotUP.html">Forgot Username/Password?</a> <br>
+			<input type="checkbox" name="vehicle" value="Remember">Remember me<br>
+
+			<input type="submit" value="Login" onclick = "location.href = 'HomePage.html'">
+			
+
+		</ul>
+	</form>
+	
+	
+	<form name="signup" action="index_submit" method="get" accept-charset="utf-8">
+	  <ul id = "S">
+	  <br>Not Signed Up?: <br> <br>
+	  <label for="usermail">First Name:</label>
+			<input type="email" name="usermail"  required> <br>
+	  
+	  <label for="usermail">Last Name:</label>
+			<input type="text" name="usermail"  required> <br>
+	  
+	  <label for="usermail">Student ID:</label>
+			<input type="text" name="usermail"  required> <br>
+	  
+	  <label for="usermail">Email: </label>
+			<input type="text" name="usermail"  required> <br>
+	  
+	  <label for="usermail">Username:</label>
+			<input type="text" name="usermail"  required> <br>
+	  
+	  <label for="usermail">Password:</label>
+			<input type="text" name="usermail"  required> <br>
+	 
+	  <label for="usermail">Re-Password:</label>
+			<input type="text" name="usermail"  required> <br>
+			
+	  <input type="button" value="Signup" onclick = "popSignedUp()"> <br>
+	  
+	  <label for="signedUP" id = "signedup" style = "visibility: hidden">You are signed up!</label>
+	  
+	  </ul>
+	  
+	</form>
+	
+	</section>	
+	
+	<script>
+	
+	var image = document.getElementById('myImage');
+	var sound = document.getElementById('audio');
+	var temp = document.getElementsByClassName("loginform");
+	var temp1 = document.getElementsByClassName("signup");	
+	
+	var login = document.getElementById('L');
+	var signup = document.getElementById('S');
+	var signedUp = document.getElementById('signedup');
+	
+
+		function changeImage() {
+			image.src = "BittenLogo.png";
+			sound.play();
+			setTimeout(stopSound, 1000);
+		}
+		
+		function stopSound() {
+			sound.src = "";
+		}
+		
+		function function1(){
+			temp.style.visibility = 'hidden';
+			temp1.style.visibility = 'visible';
+		}
+		
+		function popSignedUp(){
+			signedUp.style.visibility = 'visible';
+		}
+		
+</script>
+
+</div>
+
+
+</body>
