@@ -1,4 +1,9 @@
 <head>
+<link rel="apple-touch-icon" href="appicon.png" />
+		<link rel="apple-touch-startup-image" href="startup.png">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 <style type="text/css">
 	body{
 		margin:0px;
@@ -64,14 +69,13 @@
 	
 	<section class="loginform">
 	<form name="login" action="index_submit" method="get" accept-charset="utf-8">
-		<ul>
+		<ul id = "L">
 			<label for="usermail">Username</label>
 			<input type="email" name="usermail" placeholder="yourname@ursinus.edu" required> <br>
 			<label for="password">Password</label>
 			<input type="password" name="password" placeholder="password" required> <br>
 
-			<a href="">Forgot Username?</a> <br>
-			<a href="">Forgot Password?</a> <br>
+			<a href="ForgotUP.html">Forgot Username/Password?</a> <br>
 			<input type="checkbox" name="vehicle" value="Remember">Remember me<br>
 
 			<input type="submit" value="Login" onclick = "location.href = 'HomePage.html'">
@@ -82,7 +86,7 @@
 	
 	
 	<form name="signup" action="index_submit" method="get" accept-charset="utf-8">
-	  <ul>
+	  <ul id = "S">
 	  <br>Not Signed Up?: <br> <br>
 	  <label for="usermail">First Name:</label>
 			<input type="email" name="usermail"  required> <br>
@@ -105,7 +109,9 @@
 	  <label for="usermail">Re-Password:</label>
 			<input type="text" name="usermail"  required> <br>
 			
-	  <input type="button" value="Signup">
+	  <input type="button" value="Signup" onclick = "popSignedUp()"> <br>
+	  
+	  <label for="signedUP" id = "signedup" style = "visibility: hidden">You are signed up!</label>
 	  
 	  </ul>
 	  
@@ -119,6 +125,10 @@
 	var sound = document.getElementById('audio');
 	var temp = document.getElementsByClassName("loginform");
 	var temp1 = document.getElementsByClassName("signup");	
+	
+	var login = document.getElementById('L');
+	var signup = document.getElementById('S');
+	var signedUp = document.getElementById('signedup');
 	
 
 		function changeImage() {
@@ -134,6 +144,10 @@
 		function function1(){
 			temp.style.visibility = 'hidden';
 			temp1.style.visibility = 'visible';
+		}
+		
+		function popSignedUp(){
+			signedUp.style.visibility = 'visible';
 		}
 		
 </script>
