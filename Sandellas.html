@@ -41,7 +41,7 @@
 		
 		width: 20px;
 		margin: 107px auto;
-		padding: 195px;
+		padding: 175px;
 		background-color: rgba(250,250,250,0.5);
 		border-radius: 5px;
 		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2), 
@@ -231,6 +231,44 @@
 		right: 500px;
 	}
 	
+	#buttonboxhome {
+		width: 60px;
+		height: 40px;
+		background-color: #7892c2;
+		position: relative;
+		margin-left: 40px;
+		border-radius: 5px;
+		top: 178px;
+		left: 66px;
+	}
+
+	#buttonboxhome:before {
+		content: "";
+		position: absolute;
+		top: 0px;
+		left:57px;
+		border-style: solid;
+		border-width: 0px 0px 0px 0px;
+		border-color: transparent #7892c2 transparent transparent;
+		transform: rotate(180deg);
+	}
+
+	#buttonboxhome > a {
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font: bold 18px/40px Sans-Serif;
+	}
+
+	#buttonboxhome:hover {
+		background-color: lightblue;
+	}
+
+	#buttonboxhome:hover:before {
+		border-right-color: lightblue;
+	}
+	
 
 	
 	
@@ -251,7 +289,7 @@
 	This is Sandellas
 	</li>
 	
-	<a href="#" class="home-Button" onclick = "location.href = 'HomePage.html'">Home</a>
+	<div id="buttonboxhome"> <a href="HomePage.html" >HOME</a></div>
 		
 	<li class ="list3" id = "3">
 	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('Sandwich')">Roast Beef Sub</a></div></div>
