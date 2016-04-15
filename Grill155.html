@@ -88,7 +88,7 @@
 		position: absolute;
 		float:left;
 		width:370px;
-		top: 350px;
+		top: 330px;
 		left: 475px;
 		visibility: visible
 	}
@@ -97,7 +97,7 @@
 		position: absolute;
 		float:right;
 		width:370px;
-		top: 350px;
+		top: 330px;
 		right: 290px;
 		visibility: visible
 		
@@ -220,20 +220,146 @@
 		top:10px;
 	}
 	
-	.forward-Button {
-		position:absolute;
-		top: 340px;
+	#buttonboxback {
+		width: 50px;
+		height: 40px;
+		background-color: #7892c2;
+		position: relative;
+		margin-left: 40px;
+		border-radius: 5px;
+		top: 30px;
+		left: -206px;
+	}
+
+	#buttonboxback:before {
+		content: "";
+		position: absolute;
+		top: 0px;
+		left: -18px;
+		border-style: solid;
+		border-width: 20px 20px 20px 0;
+		border-color: transparent #7892c2 transparent transparent;
+	}
+
+	#buttonboxback > a {
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font: bold 18px/40px Sans-Serif;
+	}
+
+	#buttonboxback:hover {
+		background-color: lightblue;
+	}
+
+	#buttonboxback:hover:before {
+		border-right-color: lightblue;
 	}
 	
-	.back-Button {
-		position:absolute;
-		top: 340px;
+	#buttonboxadd {
+		width: 50px;
+		height: 40px;
+		background-color: #7892c2;
+		position: relative;
+		margin-left: 40px;
+		border-radius: 5px;
+		top: 30px;
+		left: 170px;
+	}
+
+	#buttonboxadd > a {
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font: bold 18px/40px Sans-Serif;
+	}
+
+	#buttonboxadd:hover {
+		background-color: lightblue;
 	}
 	
 	.home-Button {
 		position:absolute;
 		top: 340px;
 		right: 200px;
+	}
+	
+	#buttonboxnext {
+		width: 50px;
+		height: 40px;
+		background-color: #7892c2;
+		position: relative;
+		margin-left: 40px;
+		border-radius: 5px;
+		top: 20px;
+		left: -26px;
+	}
+
+	#buttonboxnext:before {
+		content: "";
+		position: absolute;
+		top: 0px;
+		left:47px;
+		border-style: solid;
+		border-width: 20px 20px 20px 0px;
+		border-color: transparent #7892c2 transparent transparent;
+		transform: rotate(180deg);
+	}
+
+	#buttonboxnext > a {
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font: bold 18px/40px Sans-Serif;
+	}
+
+	#buttonboxnext:hover {
+		background-color: lightblue;
+	}
+
+	#buttonboxnext:hover:before {
+		border-right-color: lightblue;
+	}
+	
+	#buttonboxhome {
+		width: 60px;
+		height: 40px;
+		background-color: #7892c2;
+		position: relative;
+		margin-left: 40px;
+		border-radius: 5px;
+		top: 20px;
+		left: 66px;
+	}
+
+	#buttonboxhome:before {
+		content: "";
+		position: absolute;
+		top: 0px;
+		left:57px;
+		border-style: solid;
+		border-width: 0px 0px 0px 0px;
+		border-color: transparent #7892c2 transparent transparent;
+		transform: rotate(180deg);
+	}
+
+	#buttonboxhome > a {
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font: bold 18px/40px Sans-Serif;
+	}
+
+	#buttonboxhome:hover {
+		background-color: lightblue;
+	}
+
+	#buttonboxhome:hover:before {
+		border-right-color: lightblue;
 	}
 	
 
@@ -256,48 +382,48 @@
 	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('3-Piece Chicken Tenders')">3-Piece Chicken Tenders</a></div></div>
 	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('Buffalo Chicken Cheesesteak')">Buffalo Chicken Chzsteak</a></div></div>
 	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('Chicken Cheese Steak')">Chicken ChzSteak</a></div></div>
-	<a href="#" class="forward-Button" onclick = "nextPage()">Next</a>
+	<div id="buttonboxnext"><a href="#" onclick = "nextPage()">NEXT</a></div>
 	</li>
 	
 	<li class ="list2" id = "2">
 	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('5-Piece Chicken Tenders')">5-Piece Chicken Tenders</a></div></div>
 	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('Cheese Steak Sandwich')">Chz Steak Sandwich</a></div></div>
 	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('Cheeseburger')">Chzburger</a></div></div>
-	<a href="#" class="home-Button" onclick = "location.href = 'HomePage.html'">Home</a>
+	<div id="buttonboxhome"> <a href="HomePage.html" >HOME</a></div>
 	</li>
 		
 	<li class ="list3" id = "3">
 	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('French Fries')">French Fries</a></div></div>
 	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('Drink')">Drink</a></div></div>
 	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('Grilled Chicken Sandwich')">Grilled Chicken Sandwich</a></div></div>
-	<a href="#" class="back-Button" onclick = "lastPage()">Back</a>
 	</li>
 	
 	<li class ="list4" id = "4">
-	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('Double Cheeseburger')">Double Chzburger</a></div></div>
-	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('Atomic Burger')">Atomic Burger</a></div></div>
-	<a href="#" class="home-Button" onclick = "location.href = 'HomePage.html'">Home</a>
+	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('5-Piece Chicken Tenders')">5-Piece Chicken Tenders</a></div></div>
+	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('Cheese Steak Sandwich')">Chz Steak Sandwich</a></div></div> <br><br><br><br><br>
+	
+	<div id="buttonboxhome"> <a href="HomePage.html" >HOME</a></div>
 	</li>
 	
 	
 	</div>
 	
 	<div class ="list5" id = "5">
-	<div class="round-button"><div class="round-button-circle"><a href="Grill155.html" class="round-button">Back</a></div></div>
+	<div id="buttonboxback"><a href="Grill155.html">BACK</a></div>
 	</div>
 	
 	<div class ="list6" id = "6">
-	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "add()">Add</a></div></div>
+	<div id="buttonboxadd"><a href="#" onclick = "add()">ADD</a></div>
 	</div>
 	
 	<script>
-	
 
-	
 	var image = document.getElementById('myImage');
 	var sound = document.getElementById('audio');
 	var temp = document.getElementsByClassName("loginform");
 	var temp1 = document.getElementsByClassName("signup");	
+	var backbutton = document.getElementById('buttonboxback');
+	var homebutton = document.getElementById('buttonboxhome');
 	
 	var new1 = document.getElementById("3");
 	var new2 = document.getElementById("4");
@@ -308,7 +434,7 @@
 	var change = document.getElementById("M");
 	
 	var food= "";
-	
+
 	var map = new Object();
 	map["Cheeseburger"] = [3.49, 300, 680, 7, 15];
 	map["3-Piece Chicken Tenders"] = [3.49, 300, 680, 7, 15];
@@ -343,6 +469,11 @@
 			new2.style.visibility = 'visible';
 			new3.style.visibility = 'hidden';
 			new4.style.visibility = 'hidden';
+			new5.style.visibility = 'visible';
+			backbutton.style.top = '80px';
+			backbutton.style.left = '-250px';
+			homebutton.style.top = '0px';
+			homebutton.style.left = '-150px';
 		}
 		
 		function lastPage(){
@@ -362,6 +493,9 @@
 			new3.style.visibility = 'hidden';
 			new4.style.visibility = 'hidden';
 			new5.style.visibility = 'visible';
+			backbutton.style.top = '30px';
+			backbutton.style.left = '-200px';
+			
 			new6.style.visibility = 'visible';
 			
 			change.style.padding = '90px';
@@ -374,6 +508,8 @@
 		function add() {
 			
 			new6.style.visibility = 'hidden';
+			backbutton.style.top = '50px';
+			backbutton.style.left = '-200px';
 			
 			change.style.padding = '90px';
 			change.style.width = '100px';

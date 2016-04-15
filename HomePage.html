@@ -71,7 +71,7 @@
 		display:block;
 		float:left;
 		width:100%;
-		padding-top:27%;
+		padding-top:24%;
 		padding-bottom:50%;
 		line-height:1em;
 		margin-top:-0.5em;
@@ -230,32 +230,32 @@
 	
 	<div class="MenuItems">
 	
-	<div class ="Help">
-	<div class="round-button"><div class="round-button-circle"><a href="" class="round-button">Help</a></div></div>
+	<div class ="Help" id = "H">
+	<div class="round-button"><div class="round-button-circle"><a href="Help.html" class="round-button">Help</a></div></div>
 	</div>
 		
-	<li class ="list1">
+	<li class ="list1" id = "1">
 	<div class="round-button"><div class="round-button-circle"><a href="Grill155.html" class="round-button">Grill 155</a></div></div>
 	<div class="round-button"><div class="round-button-circle"><a href="Sandellas.html" class="round-button">Sandellas</a></div></div>
 	</li>
-	<li class ="list2">
-	<div class="round-button"><div class="round-button-circle"><a href="" class="round-button" >Jazzman's</a></div></div>
-	<div class="round-button"><div class="round-button-circle"><a href="" class="round-button" >Sub Connection</a></div></div>
+	<li class ="list2" id = "2">
+	<div class="round-button"><div class="round-button-circle"><a href="Jazzman's.html" class="round-button" >Jazzman's</a></div></div>
+	<div class="round-button"><div class="round-button-circle"><a href="SubConnection.html" class="round-button" >Sub Connection</a></div></div>
 	</li>
 	</div>
 	
-	<div class ="Menu">
-	<div class="round-button"><div class="round-button-circle"><a href="" class="round-button">Profile</a></div></div>
+	<div class ="Menu" id = "M1">
+	<div class="round-button"><div class="round-button-circle"><a href="Profile.html" class="round-button">Profile</a></div></div>
 	</div>	
-	<div class ="Menu1">
+	<div class ="Menu1" id = "M2">
 	<div class="round-button"><div class="round-button-circle"><a href="" class="round-button">Lists</a></div></div>
 	
 	</div>
-	<div class ="Menu2">
-	<div class="round-button"><div class="round-button-circle"><a href="" class="round-button">Log Out</a></div></div>
+	<div class ="Menu2" id = "M3">
+	<div class="round-button"><div class="round-button-circle"><a href="LoginPage.html" class="round-button">Log Out</a></div></div>
 	</div>
-	<div class ="Menu3">
-	<div class="round-button"><div class="round-button-circle"><a href="" class="round-button">Cart</a></div></div>
+	<div class ="Menu3" id = "M4">
+	<div class="round-button"><div class="round-button-circle"><a href="Cart.html" class="round-button">Cart</a></div></div>
 	
 	</div>
 	
@@ -264,14 +264,15 @@
 	
 	<script>
 	
-
 	
 	var image = document.getElementById('myImage');
 	var sound = document.getElementById('audio');
 	var temp = document.getElementsByClassName("loginform");
 	var temp1 = document.getElementsByClassName("signup");	
 	
-
+	
+	
+	
 		function changeImage() {
 			image.src = "BittenLogo.png";
 			sound.play();
@@ -286,6 +287,49 @@
 			temp.style.visibility = 'hidden';
 			temp1.style.visibility = 'visible';
 		}
+		
+		function getCart(){
+			
+			alert(total1);
+				
+		}
+		
+		function forNowS(){
+			new1.style.visibility = 'hidden';
+			new2.style.visibility = 'hidden';
+			new3.style.visibility = 'hidden';
+			new4.style.visibility = 'hidden';
+			
+			change.style.padding = '90px';
+			change.style.width = '100px';
+			change.innerHTML = "This is Sandella's page."
+		
+		}
+		
+		function forNowJ(){
+			new1.style.visibility = 'hidden';
+			new2.style.visibility = 'hidden';
+			new3.style.visibility = 'hidden';
+			new4.style.visibility = 'hidden';
+			
+			change.style.padding = '90px';
+			change.style.width = '100px';
+			change.innerHTML = "This is Jazzman's page."
+		
+		}
+		
+		function forNowC(){
+			new1.style.visibility = 'hidden';
+			new2.style.visibility = 'hidden';
+			new3.style.visibility = 'hidden';
+			new4.style.visibility = 'hidden';
+			
+			change.style.padding = '90px';
+			change.style.width = '100px';
+			change.innerHTML = "This is cart."
+		
+		}
+
 		
 </script>
 
