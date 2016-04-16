@@ -25,7 +25,7 @@
 		width:960px;
 		background: #F0F0F0;
 		border: 1px solid #CCC;
-		height: 700px;
+		height: 800px;
 		margin: 20px auto;
 	}
 	
@@ -238,7 +238,7 @@
 		position: relative;
 		margin-left: 40px;
 		border-radius: 5px;
-		top: 178px;
+		top: 268px;
 		left: 100px;
 	}
 
@@ -252,6 +252,44 @@
 
 	#buttonboxhome:hover {
 		background-color: lightblue;
+	}
+	
+	
+	#buttonboxback {
+		width: 50px;
+		height: 40px;
+		background-color: #7892c2;
+		position: relative;
+		margin-left: 40px;
+		border-radius: 5px;
+		top: 170px;
+		left: -236px;
+	}
+
+	#buttonboxback:before {
+		content: "";
+		position: absolute;
+		top: 0px;
+		left: -19px;
+		border-style: solid;
+		border-width: 20px 20px 20px 0;
+		border-color: transparent #7892c2 transparent transparent;
+	}
+
+	#buttonboxback > a {
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font: bold 18px/40px Sans-Serif;
+	}
+
+	#buttonboxback:hover {
+		background-color: lightblue;
+	}
+
+	#buttonboxback:hover:before {
+		border-right-color: lightblue;
 	}
 
 	</style>
@@ -267,9 +305,9 @@
 	
 		
 	<li class ="list1" id = "1" >
-	<div class="round-button"><div class="round-button-circle"><a href="SubConnection.html" class="round-button">Cold Drinks</a></div></div>
-	<div class="round-button"><div class="round-button-circle"><a href="SubConnectionHot.html" class="round-button" >Hot Drinks</a></div></div>
-	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" >Food</a></div></div>
+	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "coldDrinks()">Cold Drinks</a></div></div>
+	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "hotDrinks()">Hot Drinks</a></div></div>
+	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "food1()">Food</a></div></div>
 	</li>
 	
 	<div id="buttonboxhome"> <a href="HomePage.html" >HOME</a></div>
@@ -289,11 +327,23 @@
 	</li>
 	
 	<div class ="list5" id = "5">
-	<div class="round-button"><div class="round-button-circle"><a href="Grill155.html" class="round-button">Back</a></div></div>
+	<div id="buttonboxback"><a href="#" onclick = "back()">BACK</a></div>
 	</div>
 	
 	<div class ="list6" id = "6">
 	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "add()">Add</a></div></div>
+	</div>
+	
+	<div class="Cold" id = "C" style = "visibility: hidden">
+	Cold Drinks
+	</div>
+	
+	<div class="Hot" id = "H" style = "visibility: hidden">
+	Hot Drinks
+	</div>
+	
+	<div class="Food" id = "F" style = "visibility: hidden">
+	Food
 	</div>
 		
 	<script>
@@ -311,6 +361,11 @@
 	var new5 = document.getElementById("5");
 	//var new6 = document.getElementById("6");
 	var change = document.getElementById("M");
+	
+	var cold = document.getElementById("C");
+	var hot = document.getElementById("H");
+	var newFood = document.getElementById("F");
+		
 	
 	var food= "";
 
@@ -368,8 +423,35 @@
 			
 			change.style.padding = '90px';
 			change.style.width = '100px';
-			change.innerHTML = food + " added to cart!"+"<br><br><br><br><br><br><br><br>";
+			change.innerHTML = food + " added to cart!"+"<br><br><br><br><br><br><br><br>";	
+		}
+		
+		function hotDrinks(){
 			
+			hot.style.visibility = 'visible'
+			new1.style.visibility = 'hidden';
+			new5.style.visibility = 'visible';
+			
+		}
+		
+		function coldDrinks(){
+			new1.style.visibility = 'hidden';
+			new5.style.visibility = 'visible';
+			cold.style.visibility = 'visible'
+		}
+		
+		function food1(){
+			new1.style.visibility = 'hidden';
+			new5.style.visibility = 'visible';
+			newFood.style.visibility = 'visible'	
+		}
+		
+		function back(){
+			new1.style.visibility = 'visible';
+			new5.style.visibility = 'hidden';
+			food.style.visibility = 'hidden';	
+			cold.style.visibility = 'hidden';	
+			hot.style.visibility = 'hidden';	
 		}
 
 		
