@@ -369,7 +369,7 @@
 
 <div class="content">
 
-	<img id="myImage" onclick = "changeImage();playSound()" src = "NotBittenLogo.jpg">
+	<img id="myImage" onclick = "changeImage();playSound()" src = "a.png">
 	<audio id="audio" src="Cartoon_Bite_Sound_Effect.ogg" ></audio>
 	
 	<div class="MenuItems" id = "M">
@@ -423,9 +423,8 @@
 	
 	<section class="performance-facts" id = "Nutrition" style = "visibility: hidden;top: 210px;">
   <header class="performance-facts__header">
-    <h1 class="performance-facts__title" id = "Price">Nutrition Facts	$3.49</h1>
-    <p>Serving Size 1/2 cup (about 82g)
-    <p>Serving Per Container 8</p>
+	<div class="performance-facts__title" id = "Price">3.49</div>
+    <h1 class="performance-facts__title">Nutrition Facts</h1>
   </header>
   <table class="performance-facts__table">
     <thead>
@@ -621,7 +620,7 @@
 			change.style.width = '160px';
 			change.style.height = '190px';
 			
-			price.innerHTML = "Nutrition Facts    $"+ map[k][0];
+			price.innerHTML = "$"+ map[k][0];
 			
 		}
 		
