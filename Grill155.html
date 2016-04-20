@@ -1,8 +1,10 @@
+<!DOCTYPE>
 <head>
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<meta name="viewport" content="width=device-width, user-scalable=no">
+		
 <style type="text/css">
 	body{
 		margin:0px;
@@ -30,10 +32,10 @@
 	
 	img {
 		position: relative;
-		left: 180px;
-		top: 0px;
-		width: 600px;
-		height: 200px;
+		left: 350px;
+		top: 100px;
+		width: 300px;
+		height: 100px;
 	}
 	
 	.MenuItems {
@@ -46,7 +48,7 @@
 		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2), 
 					inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
 		border: 1px solid rgba(0, 0, 0, 0.3);
-		visibility: visible
+		visibility: visible;
 		top: 20px;
 	}
 	
@@ -224,153 +226,144 @@
 		top:10px;
 	}
 	
-	#buttonboxback {
-		width: 50px;
-		height: 40px;
-		background-color: #7892c2;
-		position: relative;
-		margin-left: 40px;
-		border-radius: 5px;
-		top: 30px;
-		left: -206px;
-	}
-
-	#buttonboxback:before {
-		content: "";
-		position: absolute;
-		top: 0px;
-		left: -18px;
-		border-style: solid;
-		border-width: 20px 20px 20px 0;
-		border-color: transparent #7892c2 transparent transparent;
-	}
-
-	#buttonboxback > a {
-		display: block;
-		text-decoration: none;
-		text-align: center;
-		color: #fff;
-		font: bold 18px/40px Sans-Serif;
-	}
-
-	#buttonboxback:hover {
-		background-color: lightblue;
-	}
-
-	#buttonboxback:hover:before {
-		border-right-color: lightblue;
-	}
-	
-	#buttonboxadd {
-		width: 50px;
-		height: 40px;
-		background-color: #7892c2;
-		position: relative;
-		margin-left: 40px;
-		border-radius: 5px;
-		top: 30px;
-		left: 170px;
-	}
-
-	#buttonboxadd > a {
-		display: block;
-		text-decoration: none;
-		text-align: center;
-		color: #fff;
-		font: bold 18px/40px Sans-Serif;
-	}
-
-	#buttonboxadd:hover {
-		background-color: lightblue;
-	}
-	
-	.home-Button {
-		position:absolute;
-		top: 340px;
-		right: 200px;
-	}
-	
-	#buttonboxnext {
-		width: 50px;
-		height: 40px;
-		background-color: #7892c2;
-		position: relative;
-		margin-left: 40px;
-		border-radius: 5px;
-		top: 20px;
-		left: -26px;
-	}
-
-	#buttonboxnext:before {
-		content: "";
-		position: absolute;
-		top: 0px;
-		left:47px;
-		border-style: solid;
-		border-width: 20px 20px 20px 0px;
-		border-color: transparent #7892c2 transparent transparent;
-		transform: rotate(180deg);
-	}
-
-	#buttonboxnext > a {
-		display: block;
-		text-decoration: none;
-		text-align: center;
-		color: #fff;
-		font: bold 18px/40px Sans-Serif;
-	}
-
-	#buttonboxnext:hover {
-		background-color: lightblue;
-	}
-
-	#buttonboxnext:hover:before {
-		border-right-color: lightblue;
-	}
-	
 	#buttonboxhome {
 		width: 60px;
 		height: 40px;
-		background-color: #7892c2;
+		background-color: #68A362;
 		position: relative;
 		margin-left: 40px;
 		border-radius: 5px;
+		moz-border-radius: 15px;
+		-webkit-border-radius: 15px;
 		top: 20px;
 		left: 66px;
 	}
-
-	#buttonboxhome:before {
-		content: "";
-		position: absolute;
-		top: 0px;
-		left:57px;
-		border-style: solid;
-		border-width: 0px 0px 0px 0px;
-		border-color: transparent #7892c2 transparent transparent;
-		transform: rotate(180deg);
-	}
-
+	
 	#buttonboxhome > a {
 		display: block;
 		text-decoration: none;
 		text-align: center;
 		color: #fff;
-		font: bold 18px/40px Sans-Serif;
+		font: bold 18px/18px Sans-Serif;
+		
 	}
 
 	#buttonboxhome:hover {
-		background-color: lightblue;
-	}
-
-	#buttonboxhome:hover:before {
-		border-right-color: lightblue;
+		background-color: lightgreen;
 	}
 	
+	p {
+  margin: 0;
+}
 
+.performance-facts {
+  position: absolute;
+  border: 1px solid black;
+  margin: 18px;
+  float: left;
+  width: 340px;
+  height: 375px;
+  left: 478px;
+  padding: 0.5rem;
+  table {
+    border-collapse: collapse;
+  }
+}
+.performance-facts__title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0 0 0.25rem 0;
+}
+.performance-facts__header {
+  border-bottom: 10px solid black;
+  padding: 0 0 0.25rem 0;
+  margin: 0 0 0.5rem 0;
+  p {
+    margin: 0;
+  }
+}
+.performance-facts__table {
+  width: 100%;
+  thead tr {
+    th, td {
+      border: 0;
+    }
+  }
+  th, td {
+    font-weight: normal;
+    text-align: left;
+    padding: 0.25rem 0;
+    border-top: 1px solid black; 
+    white-space: nowrap;
+  }
+  td {
+    &:last-child {
+      text-align: right;
+    }
+  }
+  .blank-cell {
+    width: 1rem;
+    border-top: 0;
+  }
+  .thick-row {
+    th, td {
+      border-top-width: 5px;
+    }
+  }
+}
+.small-info {
+  font-size: 0.7rem;
+}
+
+.performance-facts__table--small {
+  @extend .performance-facts__table;
+  border-bottom: 1px solid #999;
+  margin: 0 0 0.5rem 0;
+  thead {
+    tr {
+      border-bottom: 1px solid black; 
+    }
+  }
+  td {
+    &:last-child {
+      text-align: left;
+    }
+  }
+  th, td {
+    border: 0;
+    padding: 0;
+  }
+}
+
+.performance-facts__table--grid {
+  @extend .performance-facts__table;
+  margin: 0 0 0.5rem 0;
+  td {
+    &:last-child {
+      text-align: left;
+      &::before {
+        content: "•";
+        font-weight: bold;
+        margin: 0 0.25rem 0 0;
+      }
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+.thick-end {
+  border-bottom: 10px solid black;
+}
+.thin-end {
+  border-bottom: 1px solid black;
+}
 	
 	
-	
-	</style>
+@media (max-width : 1400px ){
+}
+</style>
 </head>
 <body>
 
@@ -383,42 +376,166 @@
 	
 		
 	<li class ="list1" id = "1" >
-	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('3-Piece Chicken Tenders')">3-Piece Chicken Tenders</a></div></div>
-	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('Buffalo Chicken Cheesesteak')">Buffalo Chicken Chzsteak</a></div></div>
-	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('Chicken Cheese Steak')">Chicken ChzSteak</a></div></div>
-	<div id="buttonboxnext"><a href="#" onclick = "nextPage()">NEXT</a></div>
+	<div id="buttonboxhome" style="width:110px;height:60px;top:-60px;left:0px;"><a href="#" onclick = "get('3-Piece Chicken Tenders')">3-Piece Chicken Tenders</a></div>
+	<div id="buttonboxhome" style="width:110px;height:60px;top:-34px;left:0px;"><a href="#"  onclick = "get('Buffalo Chicken Cheesesteak')">Buffalo Chicken Chzsteak</a></div>
+	<div id="buttonboxhome" style="width:110px;height:60px;top:0px;left:0px;"><a href="#" onclick = "get('Chicken Cheese Steak')">Chicken ChzSteak</a></div>
+	<div id="buttonboxhome" style="width:70px;height:30px;top:45px;left:0px;"><a href="#" onclick = "nextPage()">NEXT</a></div>
 	</li>
 	
 	<li class ="list2" id = "2">
-	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('5-Piece Chicken Tenders')">5-Piece Chicken Tenders</a></div></div>
-	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('Cheese Steak Sandwich')">Chz Steak Sandwich</a></div></div>
-	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('Cheeseburger')">Chzburger</a></div></div>
-	<div id="buttonboxhome"> <a href="HomePage.html" >HOME</a></div>
+	<div id="buttonboxhome" style="width:110px;height:60px;top:-60px;left:0px;"><a href="#" onclick = "get('5-Piece Chicken Tenders')">5-Piece Chicken Tenders</a></div>
+	<div id="buttonboxhome" style="width:110px;height:60px;top:-35px;left:0px;"><a href="#" onclick = "get('Cheese Steak Sandwich')"><br>Chz Steak Sandwich</a></div>
+	<div id="buttonboxhome" style="width:110px;height:60px;top:0px;left:0px;"><a href="#" onclick = "get('Cheeseburger')"><br>Chzburger</a></div>
+	<div id="buttonboxhome" style="width:70px;height:30px;top:45px;left:40px;"> <a href="HomePage.html" >HOME</a></div>
 	</li>
 		
 	<li class ="list3" id = "3">
-	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('French Fries')">French Fries</a></div></div>
-	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('Drink')">Drink</a></div></div>
-	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('Grilled Chicken Sandwich')">Grilled Chicken Sandwich</a></div></div>
+	<div id="buttonboxhome" style="width:110px;height:60px;top:-80px;left:0px;"><a href="#" onclick = "get('French Fries')"><br>French Fries</a></div>
+	<div id="buttonboxhome" style="width:110px;height:60px;top:-53px;left:0px;"><a href="#" onclick = "get('Drink')"><br>Drink</a></div>
+	<div id="buttonboxhome" style="width:110px;height:60px;top:-19px;left:-1px;"><a href="#" onclick = "get('Grilled Chicken Sandwich')">Grilled Chicken Sandwich</a></div>
 	</li>
 	
 	<li class ="list4" id = "4">
-	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('5-Piece Chicken Tenders')">5-Piece Chicken Tenders</a></div></div>
-	<div class="round-button"><div class="round-button-circle"><a href="#" class="round-button" onclick = "get('Cheese Steak Sandwich')">Chz Steak Sandwich</a></div></div> <br><br><br><br><br>
+	<div id="buttonboxhome" style="width:110px;height:60px;top:-80px;left:0px;"><a href="#" onclick = "get('5-Piece Chicken Tenders')">Double Chzburger</a></div>
+	<div id="buttonboxhome" style="width:110px;height:60px;top:-55px;left:0px;"><a href="#" onclick = "get('Cheese Steak Sandwich')">Atomic Burger</a></div><br><br><br><br><br>
 	
-	<div id="buttonboxhome"> <a href="HomePage.html" >HOME</a></div>
+	<div id="buttonboxhome" style="width:70px;height:30px;top:-30px;left:40px;"> <a href="HomePage.html" >HOME</a></div>
 	</li>
-	
 	
 	</div>
 	
 	<div class ="list5" id = "5">
-	<div id="buttonboxback"><a href="Grill155.html">BACK</a></div>
+	<div id="buttonboxhome" style="width:70px;height:30px;top:70px;left:0px;"> <a href="Grill155.html">BACK</a></div>
 	</div>
 	
 	<div class ="list6" id = "6">
-	<div id="buttonboxadd"><a href="#" onclick = "add()">ADD</a></div>
+	<div id="buttonboxhome" style="width:60px;height:30px;top:69px;left:-50px;"><a href="#" onclick = "add()">ADD</a></div>
 	</div>
+	
+	<div id="buttonboxhome" style="width:60px;height:35px;top:-107px;left:250px;background-color: #3090C7;"><a href="Profile.html">Profile</a></div>
+	
+	<div id="buttonboxhome" style="width:60px;height:35px;top:-143px;left:550px;background-color: #3090C7;"><a href="">Lists</a></div></div>
+	
+	<div id="buttonboxhome" style="width:60px;height:35px;top:-122px;left:650px;background-color: #3090C7;"><a href="LoginPage.html">Log Out</a></div>
+	
+
+	<div id="buttonboxhome" style="width:60px;height:35px;top:-158px;left:550px;background-color: #3090C7;"><a href="Cart.html">Cart</a></div>
+	
+	<section class="performance-facts" id = "Nutrition" style = "visibility: hidden;top: 210px;">
+  <header class="performance-facts__header">
+    <h1 class="performance-facts__title" id = "Price">Nutrition Facts	$3.49</h1>
+    <p>Serving Size 1/2 cup (about 82g)
+    <p>Serving Per Container 8</p>
+  </header>
+  <table class="performance-facts__table">
+    <thead>
+      <tr>
+        <th colspan="3" class="small-info">
+          Amount Per Serving
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th colspan="2">
+          <b>Calories</b>
+          200
+        </th>
+      </tr>
+      <tr class="thick-row">
+        <td colspan="3" class="small-info">
+          <b>% Daily Value*</b>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <b>Total Fat</b>
+          14g
+        </th>
+        <td>
+          <b>22%</b>
+        </td>
+      </tr>
+      <tr>
+        <td class="blank-cell">
+        </td>
+        <th>
+          Saturated Fat
+          9g
+        </th>
+        <td>
+          <b>22%</b>
+        </td>
+      </tr>
+      <tr>
+        <td class="blank-cell">
+        </td>
+        <th>
+          Trans Fat
+          0g
+        </th>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <b>Cholesterol</b>
+          55mg
+        </th>
+        <td>
+          <b>18%</b>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <b>Sodium</b>
+          40mg
+        </th>
+        <td>
+          <b>2%</b>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <b>Total Carbohydrate</b>
+          17g
+        </th>
+        <td>
+          <b>6%</b>
+        </td>
+      </tr>
+      <tr>
+        <td class="blank-cell">
+        </td>
+        <th>
+          Dietary Fiber
+          1g
+        </th>
+        <td>
+          <b>4%</b>
+        </td>
+      </tr>
+      <tr>
+        <td class="blank-cell">
+        </td>
+        <th>
+          Sugars
+          14g
+        </th>
+        <td>
+        </td>
+      </tr>
+      <tr class="thick-end">
+        <th colspan="2">
+          <b>Protein</b>
+          3g
+        </th>
+        <td>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 	
 	<script>
 
@@ -429,28 +546,30 @@
 	var backbutton = document.getElementById('buttonboxback');
 	var homebutton = document.getElementById('buttonboxhome');
 	
-	var new1 = document.getElementById("3");
-	var new2 = document.getElementById("4");
-	var new3 = document.getElementById("1");
-	var new4 = document.getElementById("2");
+	var new1 = document.getElementById("1");
+	var new2 = document.getElementById("2");
+	var new3 = document.getElementById("3");
+	var new4 = document.getElementById("4");
 	var new5 = document.getElementById("5");
 	var new6 = document.getElementById("6");
 	var change = document.getElementById("M");
+	var N = document.getElementById("Nutrition");
+	var price = document.getElementById("Price");
 	
 	var food= "";
 
 	var map = new Object();
 	map["Cheeseburger"] = [3.49, 300, 680, 7, 15];
-	map["3-Piece Chicken Tenders"] = [3.49, 300, 680, 7, 15];
-	map["Buffalo Chicken Cheesesteak"] = [3.49, 300, 680, 7, 15];
-	map["Chicken Cheese Steak"] = [3.49, 300, 680, 7, 15];
-	map["5-Piece Chicken Tenders"] = [3.49, 300, 680, 7, 15];
-	map["Cheese Steak Sandwich"] = [3.49, 300, 680, 7, 15];
-	map["Grilled Chicken Sandwich"] = [3.49, 300, 680, 7, 15];
-	map["French Fries"] = [3.49, 300, 680, 7, 15];
-	map["Drink"] = [3.49, 300, 680, 7, 15];
-	map["Double Cheeseburger"] = [3.49, 300, 680, 7, 15];
-	map["Atomic Burger"] = [3.49, 300, 680, 7, 15];
+	map["3-Piece Chicken Tenders"] = [5.65, 300, 680, 7, 15];
+	map["Buffalo Chicken Cheesesteak"] = [2.49, 300, 680, 7, 15];
+	map["Chicken Cheese Steak"] = [7.49, 300, 680, 7, 15];
+	map["5-Piece Chicken Tenders"] = [5.49, 300, 680, 7, 15];
+	map["Cheese Steak Sandwich"] = [6.49, 300, 680, 7, 15];
+	map["Grilled Chicken Sandwich"] = [8.49, 300, 680, 7, 15];
+	map["French Fries"] = [10.49, 300, 680, 7, 15];
+	map["Drink"] = [0.49, 300, 680, 7, 15];
+	map["Double Cheeseburger"] = [2.49, 300, 680, 7, 15];
+	map["Atomic Burger"] = [7.49, 300, 680, 7, 15];
 	
 
 		function changeImage() {
@@ -469,15 +588,12 @@
 		}
 		
 		function nextPage(){
-			new1.style.visibility = 'visible';
-			new2.style.visibility = 'visible';
-			new3.style.visibility = 'hidden';
-			new4.style.visibility = 'hidden';
+			new3.style.visibility = 'visible';
+			new4.style.visibility = 'visible';
+			new1.style.visibility = 'hidden';
+			new2.style.visibility = 'hidden';
 			new5.style.visibility = 'visible';
-			backbutton.style.top = '80px';
-			backbutton.style.left = '-250px';
-			homebutton.style.top = '0px';
-			homebutton.style.left = '-150px';
+			
 		}
 		
 		function lastPage(){
@@ -487,7 +603,6 @@
 			new2.style.visibility = 'hidden';
 		}
 	
-		
 		function get(k) {
 			
 			food = k;
@@ -497,26 +612,25 @@
 			new3.style.visibility = 'hidden';
 			new4.style.visibility = 'hidden';
 			new5.style.visibility = 'visible';
-			backbutton.style.top = '30px';
-			backbutton.style.left = '-200px';
 			
 			new6.style.visibility = 'visible';
 			
-			change.style.padding = '90px';
-			change.style.width = '100px';
-			change.innerHTML = "<b> Price:</b>\n" +"$"+map[k][0] + "<br><br>"+"<b> Calories:</b>"+map[k][1] +"<br><br>"+ "\n"+"<b> Sodium:</b>"+map[k][2]+ "mg"+"<br><br>"+
-			"<b> Sugars:</b>\n" +map[k][3]+ "g"+"<br><br>"+ "\n"+"<b> Protein:</b>\n" +map[k][4]+ "g" ;
+			N.style.visibility = 'visible';
+			
+			change.style.padding = '100px';
+			change.style.width = '160px';
+			change.style.height = '190px';
+			
+			price.innerHTML = "Nutrition Facts    $"+ map[k][0];
 			
 		}
 		
 		function add() {
 			
 			new6.style.visibility = 'hidden';
-			backbutton.style.top = '50px';
-			backbutton.style.left = '-200px';
 			
-			change.style.padding = '90px';
-			change.style.width = '100px';
+			N.style.visibility = 'hidden';
+			
 			change.innerHTML = food + " added to cart!"+"<br><br><br><br><br><br><br><br>";
 			
 		}
