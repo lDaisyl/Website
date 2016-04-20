@@ -30,10 +30,10 @@
 	
 	img {
 		position: relative;
-		left: 180px;
+		left: 350px;
 		top: 100px;
-		width: 600px;
-		height: 200px;
+		width: 300px;
+		height: 100px;
 	}
 	
 	.MenuItems {
@@ -49,48 +49,36 @@
 		visibility: visible
 	}
 	
-	
-	.round-button {
-		width:25%;
-		
+	#buttonboxhome {
+		width: 60px;
+		height: 40px;
+		background-color: #68A362;
+		position: relative;
+		margin-left: 40px;
+		border-radius: 5px;
+		moz-border-radius: 15px;
+		-webkit-border-radius: 15px;
+		top: 20px;
+		left: 66px;
 	}
 	
-	.round-button-circle {
-		width: 180%;
-		height:25px;
-		padding-bottom: 70%;
-		border-radius: 50%;
-		border:10px solid #cfdcec;
-		overflow:hidden;
-		
-		background: #4679BD; 
-		box-shadow: 0 0 3px gray;
+	#buttonboxhome > a {
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font: bold 18px/40px Sans-Serif;
+	}
+
+	#buttonboxhome:hover {
+		background-color: lightgreen;
 	}
 	
-	.round-button-circle:hover {
-		background:#30588e;
-	}
-	
-	.round-button a {
-		display:block;
-		float:left;
-		width:100%;
-		padding-top:24%;
-		padding-bottom:50%;
-		line-height:1em;
-		margin-top:-0.5em;
-		
-		text-align:center;
-		color:#e2eaf3;
-		font-family:Verdana;
-		font-size:1.2em;
-		font-weight:bold;
-		text-decoration:none;
-	}
+
 	.list1{
 		position: absolute;
 		float:left;
-		width:300px;
+		width:500px;
 		top: 420px;
 		left: 490px;
 	}
@@ -102,87 +90,6 @@
 		top: 420px;
 		right: 340px;
 		
-	}
-	
-	
-	.square-button {
-		width:25%;
-	}
-	
-	.square-button-square {
-		width: 100%;
-		height:25px;
-		padding-bottom: 70%;
-		border-radius: 70%;
-		border:10px solid #cfdcec;
-		overflow:hidden;
-		
-		background: #4679BD; 
-		box-shadow: 0 0 3px gray;
-	}
-	
-	.square-button-square:hover {
-		background:#30588e;
-	}
-	
-	.square-button a {
-		display:block;
-		float:left;
-		width:100%;
-		padding-top:37%;
-		padding-bottom:50%;
-		line-height:1em;
-		margin-top:-0.5em;
-		
-		text-align:center;
-		color:#e2eaf3;
-		font-family:Verdana;
-		font-size:1.2em;
-		font-weight:bold;
-		text-decoration:none;
-	}
-	
-	
-	.myButton {
-		-moz-box-shadow: 0px 0px 0px 2px #9fb4f2;
-		-webkit-box-shadow: 0px 0px 0px 2px #9fb4f2;
-		box-shadow: 0px 0px 0px 2px #9fb4f2;
-		background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7892c2), color-stop(1, #476e9e));
-		background:-moz-linear-gradient(top, #7892c2 5%, #476e9e 100%);
-		background:-webkit-linear-gradient(top, #7892c2 5%, #476e9e 100%);
-		background:-o-linear-gradient(top, #7892c2 5%, #476e9e 100%);
-		background:-ms-linear-gradient(top, #7892c2 5%, #476e9e 100%);
-		background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7892c2', endColorstr='#476e9e',GradientType=0);
-		background-color:#7892c2;
-		-moz-border-radius:10px;
-		-webkit-border-radius:10px;
-		border-radius:10px;
-		border:1px solid #4e6096;
-		display:inline-block;
-		cursor:pointer;
-		color:#ffffff;
-		font-family:Arial;
-		font-size:19px;
-		padding:12px 9px;
-		text-decoration:none;
-		text-shadow:0px 1px 0px #283966;
-	}
-	
-	.myButton:hover {
-		background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #476e9e), color-stop(1, #7892c2));
-		background:-moz-linear-gradient(top, #476e9e 5%, #7892c2 100%);
-		background:-webkit-linear-gradient(top, #476e9e 5%, #7892c2 100%);
-		background:-o-linear-gradient(top, #476e9e 5%, #7892c2 100%);
-		background:-ms-linear-gradient(top, #476e9e 5%, #7892c2 100%);
-		background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#476e9e', endColorstr='#7892c2',GradientType=0);
-		background-color:#476e9e;
-	}
-	
-	.myButton:active {
-		position:absolute;
-		top:10px;
 	}
 	
 	.Menu{
@@ -221,9 +128,14 @@
 		top: 330px;
 		left: 797px;
 	}
-	
-	
-	</style>
+
+@media (max-width : 1368px ){
+}
+
+@media (max-width : 1368px ){
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
 
@@ -235,33 +147,35 @@
 	<div class="MenuItems">
 	
 	<div class ="Help" id = "H">
-	<div class="round-button"><div class="round-button-circle"><a href="Help.html" class="round-button">Help</a></div></div>
+	<div id="buttonboxhome" style="width:60px;height:50px;top:-80px;left:-30px;background-color: #3090C7;"> <a href="Help.html">HELP</a></div>
 	</div>
 		
 	<li class ="list1" id = "1">
-	<div class="round-button"><div class="round-button-circle"><a href="Grill155.html" class="round-button">Grill 155</a></div></div>
-	<div class="round-button"><div class="round-button-circle"><a href="Sandellas.html" class="round-button">Sandellas</a></div></div>
+	<div id="buttonboxhome" style="width:110px;height:80px;top:-70px;left:-30px;"><a href="Grill155.html">Grill 155</a></div>
+	<div id="buttonboxhome" style="width:110px;height:80px;top:-40px;left:-30px;"><a href="Sandellas.html" class="round-button">Sandellas</a></div>
 	</li>
 	<li class ="list2" id = "2">
-	<div class="round-button"><div class="round-button-circle"><a href="Jazzmans.html" class="round-button" >Jazzman's</a></div></div>
-	<div class="round-button"><div class="round-button-circle"><a href="SubConnection.html" class="round-button" >Sub Connection</a></div></div>
+	<div id="buttonboxhome" style="width:110px;height:80px;top:-70px;left:0px;"><a href="Jazzmans.html" class="round-button" >Jazzman's</a></div>
+	<div id="buttonboxhome" style="width:110px;height:80px;top:-40px;left:0px;"><a href="SubConnection.html" class="round-button" >Sub Connection</a></div>
 	</li>
 	</div>
 	
+	<!-- 
 	<div class ="Menu" id = "M1">
-	<div class="round-button"><div class="round-button-circle"><a href="Profile.html" class="round-button">Profile</a></div></div>
+	<div id="buttonboxhome" style="width:60px;height:50px;top:40px;left:-40px;"><a href="Profile.html" class="round-button">Profile</a></div>
 	</div>	
 	<div class ="Menu1" id = "M2">
-	<div class="round-button"><div class="round-button-circle"><a href="index.html" class="round-button">Lists</a></div></div>
+	<div id="buttonboxhome" style="width:60px;height:50px;top:40px;left:0px;"><a href="" class="round-button">Lists</a></div></div>
 	
 	</div>
 	<div class ="Menu2" id = "M3">
-	<div class="round-button"><div class="round-button-circle"><a href="LoginPage.html" class="round-button">Log Out</a></div></div>
+	<div id="buttonboxhome" style="width:60px;height:50px;top:40px;left:0px;"><a href="LoginPage.html" class="round-button">Log Out</a></div>
 	</div>
 	<div class ="Menu3" id = "M4">
-	<div class="round-button"><div class="round-button-circle"><a href="Cart.html" class="round-button">Cart</a></div></div>
+	<div id="buttonboxhome" style="width:60px;height:50px;top:40px;left:0px;"><a href="Cart.html" class="round-button">Cart</a></div>
 	
 	</div>
+	-->
 	
 	
 	</div>
