@@ -1,0 +1,277 @@
+<!DOCTYPE>
+<head>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+
+<style type="text/css">
+
+	html {
+	   
+	   min-height: 100%;
+	   width: 100%;
+	}
+	
+	body{
+		overflow:hidden; 
+		margin:0px;
+	    min-height: 100%;
+	    width: 100%;
+		background:#F0F0F0;
+		
+	}
+	.header-cont {
+		width:100%;
+		position:fixed;
+		top:0px;
+	}
+	.header {
+		height:50px;
+		background:#F0F0F0;
+		border:1px solid #CCC;
+		width:100%;
+		margin:0px auto;
+	}
+	.content {
+		position: absolute;
+		width:1560px;
+		background: #F0F0F0;
+		border: 1px solid #CCC;
+		height: 800px;
+		margin: 20px auto;
+	}
+	
+	img {
+		position: relative;
+		left: 620px;
+		top: -650px;
+		width: 300px;
+		height: 100px;
+	}
+	
+	border {
+		position: absolute;
+		left: 330px;
+		top: 100px;
+		
+	}
+	
+	.MenuItems {
+	
+		width: 20px;
+		margin: 0px auto;
+		padding: 0px;
+		background-color: rgba(250,250,250,0.5);
+		border-radius: 5px;
+		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2), 
+					inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+		border: 1px solid rgba(0, 0, 0, 0.3);
+		visibility: visible
+	}
+	
+	#buttonboxhome {
+		width: 60px;
+		height: 40px;
+		background-color: #68A362;
+		position: relative;
+		margin-left: 40px;
+		border-radius: 5px;
+		moz-border-radius: 15px;
+		-webkit-border-radius: 15px;
+		top: 20px;
+		left: 66px;
+	}
+	
+	#buttonboxhome > a {
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font: bold 18px/40px Sans-Serif;
+	}
+
+	#buttonboxhome:hover {
+		background-color: lightgreen;
+	}
+	
+
+	.list1{
+		position: absolute;
+		float:left;
+		width:500px;
+		top: 420px;
+		left: 490px;
+	}
+	
+	.list2{
+		position: absolute;
+		float:right;
+		width:300px;
+		top: 420px;
+		right: 340px;
+		
+	}
+	
+	.Menu{
+		position: absolute;
+		width:200px;
+		top: 640px;
+		left: 480px;
+	
+	}
+	
+	.Menu1{
+		position: absolute;
+		width:150px;
+		top: 647px;
+		left: 595px;
+	}
+	
+	.Menu2{
+		position: absolute;
+		width:180px;
+		top: 644px;
+		left: 687px;
+	}
+	
+	.Menu3{
+		position: absolute;
+		width:150px;
+		top: 649px;
+		left: 790px;
+		
+	}
+	
+	.Help {
+		position: absolute;
+		width:140px;
+		top: 330px;
+		left: 797px;
+	}
+
+@media (max-width : 1368px ){
+}
+
+@media (max-width : 1368px ){
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+</head>
+
+
+<div class="content">
+<img id="border" src = "146117824462646.png" style = "width: 1565px;height: 800px; left: 0px; top: -30px;">
+	
+	<img id="myImage" onclick = "changeImage();playSound()" src = "a.png">
+	
+	
+	<audio id="audio" src="Cartoon_Bite_Sound_Effect.ogg" ></audio>
+	
+	<div class ="Help" id = "H">
+	<div id="buttonboxhome" style="width:60px;height:50px;top:-80px;left:60px;background-color: #3090C7;"> <a href="Help.html">HELP</a></div>
+	</div>
+		
+	<li class ="list1" id = "1">
+	<div id="buttonboxhome" style="width:110px;height:80px;top:-70px;left:60px;"><a href="Grill155.html">Grill 155</a></div>
+	<div id="buttonboxhome" style="width:110px;height:80px;top:-40px;left:60px;"><a href="Sandellas.html" class="round-button">Sandellas</a></div>
+	</li>
+	<li class ="list2" id = "2">
+	<div id="buttonboxhome" style="width:110px;height:80px;top:-70px;left:-100px;"><a href="Jazzmans.html" class="round-button" >Jazzman's</a></div>
+	<div id="buttonboxhome" style="width:110px;height:80px;top:-40px;left:-100px;"><a href="SubConnection.html" class="round-button" >Sub Connection</a></div>
+	</li>
+
+	
+	<!-- 
+	<div class ="Menu" id = "M1">
+	<div id="buttonboxhome" style="width:60px;height:50px;top:40px;left:-40px;"><a href="Profile.html" class="round-button">Profile</a></div>
+	</div>	
+	<div class ="Menu1" id = "M2">
+	<div id="buttonboxhome" style="width:60px;height:50px;top:40px;left:0px;"><a href="" class="round-button">Lists</a></div></div>
+	
+	</div>
+	<div class ="Menu2" id = "M3">
+	<div id="buttonboxhome" style="width:60px;height:50px;top:40px;left:0px;"><a href="LoginPage.html" class="round-button">Log Out</a></div>
+	</div>
+	<div class ="Menu3" id = "M4">
+	<div id="buttonboxhome" style="width:60px;height:50px;top:40px;left:0px;"><a href="Cart.html" class="round-button">Cart</a></div>
+	
+	</div>
+	-->
+	
+	
+	</div>
+	
+	<script>
+	
+	
+	var image = document.getElementById('myImage');
+	var sound = document.getElementById('audio');
+	var temp = document.getElementsByClassName("loginform");
+	var temp1 = document.getElementsByClassName("signup");	
+	
+	
+	
+	
+		function changeImage() {
+			image.src = "a1.png";
+			sound.play();
+			setTimeout(stopSound, 1000);
+		}
+		
+		function stopSound() {
+			sound.src = "";
+		}
+		
+		function function1(){
+			temp.style.visibility = 'hidden';
+			temp1.style.visibility = 'visible';
+		}
+		
+		function getCart(){
+			
+			alert(total1);
+				
+		}
+		
+		function forNowS(){
+			new1.style.visibility = 'hidden';
+			new2.style.visibility = 'hidden';
+			new3.style.visibility = 'hidden';
+			new4.style.visibility = 'hidden';
+			
+			change.style.padding = '90px';
+			change.style.width = '100px';
+			change.innerHTML = "This is Sandella's page."
+		
+		}
+		
+		function forNowJ(){
+			new1.style.visibility = 'hidden';
+			new2.style.visibility = 'hidden';
+			new3.style.visibility = 'hidden';
+			new4.style.visibility = 'hidden';
+			
+			change.style.padding = '90px';
+			change.style.width = '100px';
+			change.innerHTML = "This is Jazzman's page."
+		
+		}
+		
+		function forNowC(){
+			new1.style.visibility = 'hidden';
+			new2.style.visibility = 'hidden';
+			new3.style.visibility = 'hidden';
+			new4.style.visibility = 'hidden';
+			
+			change.style.padding = '90px';
+			change.style.width = '100px';
+			change.innerHTML = "This is cart."
+		
+		}
+
+		
+</script>
+
+</div>
+
