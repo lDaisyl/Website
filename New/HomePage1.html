@@ -1,0 +1,72 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home Screen</title>
+<link href="Home.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class = "content">
+<div class = "Banner">
+	<div class = "Help">
+   	<img id="Help" onclick = "" src = "images/Help.png">
+    </div>
+    <div class = "Logo">
+    <img id="myImage" onclick = "changeImage();playSound()" src = "a.png">
+    </div>
+	<audio id="audio" src="Cartoon_Bite_Sound_Effect.ogg" ></audio>
+    <div class = "Logout">
+    <img id="Logout" onclick = "" src = "images/logout.png">
+    </div>
+</div>
+<div class = "middle">
+<a href = "Grill155.html"><button class="button" style = "width:170px;height:100px;top:150px;left:60px;position: relative;background-color: #68A362;font-size: 22px;"><span><b>Grill 155</b></span></button></a>
+<a href = "SubConnection1.html"><button class="button" style = "width:170px;height:100px;top:400px;left:-130px;position: relative;background-color: #68A362;font-size: 22px;"><span><b>Sub Connection</b> </span></button></a>
+<a href = "HomePage1.html"><button class="button" style = "width:170px;height:100px;top:390px;left:70px;position: relative;background-color: #68A362;font-size: 22px;"><span><b>Sandellas </b></span></button></a>
+<a href = "HomePage1.html"><button class="button" style = "width:170px;height:100px;top:35px;left:445px;position: relative;background-color: #68A362;font-size: 22px;"><span><b>Jazzmans </b></span></button></a>
+</div>
+
+<div class = "bottom">
+	<ul>
+    	<button class="button"><span>Profile </span></button>
+        <button class="button"><span>Lists </span></button>
+        <button class="button"><span>Home </span></button>
+        <button class="button"><span>History </span></button>
+        <button class="button"><span>Cart </span></button>
+    </ul>
+</div>
+
+
+<script>
+	var image = document.getElementById('myImage');
+	var sound = document.getElementById('audio');
+	var temp = document.getElementsByClassName("loginform");
+	var temp1 = document.getElementsByClassName("signup");	
+	
+
+		function changeImage() {
+			image.src = "a1.png";
+			sound.play();
+			setTimeout(stopSound, 1000);
+		}
+		
+		function stopSound() {
+			sound.src = "";
+		}
+		
+		function function1(){
+			temp.style.visibility = 'hidden';
+			temp1.style.visibility = 'visible';
+		}		
+</script>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Page</title>
+<link href="Login.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class = "content">
+<div class = "Banner">
+	<div class = "Help">
+   	<img id="Help" onclick = "" src = "images/Help.png">
+    </div>
+    <div class = "Logo">
+    <img id="myImage" onclick = "changeImage();playSound()" src = "a.png">
+    </div>
+	
+	<audio id="audio" src="Cartoon_Bite_Sound_Effect.ogg" ></audio>
+   
+</div>
+<div class = "middle" >
+	
+    	<div class = "L" >
+			<label for="usermail">Username &nbsp &nbsp &nbsp <label><br>
+			<input type="email" name="usermail" placeholder="yourname@ursinus.edu" > <br>
+			<label for="password">Password &nbsp &nbsp &nbsp </label><br>
+			<input type="password" name="password" placeholder="password" required> <br>
+			<a href="ForgotUP.html">Forgot Username/Password?</a> <br>
+			<input type="checkbox" name="vehicle" value="Remember">Remember me<br>
+
+			<a href = "HomePage1.html"><button class="button" style = "height: 40px; width: 100px; left: -10px; font-size: 15px; padding: 0px;"><span>Login </span></button></a>
+			
+			</div>
+			
+			<div class = "L2" >
+			
+				<br>Not Signed Up?: <br> <br>
+		  <label for="usermail">First Name: &nbsp &nbsp </label><br>
+				<input type="email" name="usermail"  required> <br>
+		  
+		  <label for="usermail">Last Name: &nbsp &nbsp </label><br>
+				<input type="text" name="usermail"  required> <br>
+		  
+		  <label for="usermail">Student ID: &nbsp &nbsp </label><br>
+				<input type="text" name="usermail"  required> <br>
+		  
+		  <label for="usermail">Email: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  </label><br>
+				<input type="text" name="usermail"  required> <br>
+		  
+		  <label for="usermail">Username:&nbsp &nbsp &nbsp </label><br>
+				<input type="text" name="usermail"  required> <br>
+		  
+		  <label for="usermail">Password: &nbsp &nbsp &nbsp </label><br>
+				<input type="text" name="usermail"  required> <br>
+		 
+		  <label for="usermail">Re-Password:</label><br>
+				<input type="text" name="usermail"  required> <br>
+				
+		  <button class="button" style = "height: 40px; width: 100px; left: -10px; font-size: 15px; padding: 0px;"><span>Sign Up </span></button>
+		  
+		  <label for="signedUP" id = "signedup" style = "visibility: hidden">You are signed up!</label>
+				
+			
+		</div>
+		
+</div>
+
+
+<script>
+	var image = document.getElementById('myImage');
+	var sound = document.getElementById('audio');
+	var temp = document.getElementsByClassName("loginform");
+	var temp1 = document.getElementsByClassName("signup");	
+	
+
+		function changeImage() {
+			image.src = "a1.png";
+			sound.play();
+			setTimeout(stopSound, 1000);
+		}
+		
+		function stopSound() {
+			sound.src = "";
+		}
+		
+		function function1(){
+			temp.style.visibility = 'hidden';
+			temp1.style.visibility = 'visible';
+		}		
+</script>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lists</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class = "content">
+<div class = "Banner">
+	<div class = "Help">
+   	<img id="Help" onclick = "" src = "images/Help.png">
+    </div>
+    <div class = "Logo">
+    <img id="myImage" onclick = "changeImage();playSound()" src = "http://i65.tinypic.com/htzb4l.jpg">
+    </div>
+    <div class = "Logout">
+    <img id="Logout" onclick = "" src = "images/logout.png">
+    </div>
+</div>
+<div class = "middle">
+	<ul>
+    	<li><a href="lists.html">My Diet</a><span><img id ="delete" onClick="" src="images/delete.png"><img id ="edit" onClick="" src="images/edit.png"></li>
+        <li><a href="lists.html">Tasty</a><img id ="delete" onClick="" src="images/delete.png"><img id ="edit" onClick="" src="images/edit.png"></li>
+        <li><a href="lists.html">Football team</a><img id ="delete" onClick="" src="images/delete.png"><img id ="edit" onClick="" src="images/edit.png"></li>
+        <li><a href="lists.html">My favorite</a><img id ="delete" onClick="" src="images/delete.png"><img id ="edit" onClick="" src="images/edit.png"></li>
+        <li><a href="lists.html">My combo</a><img id ="delete" onClick="" src="images/delete.png"><img id ="edit" onClick="" src="images/edit.png"></li>
+    </ul>
+	
+</div>
+
+<a href="#"><img id="back" onClick="goBack()" src="images/back.png"></a>
+<div class = "bottom">
+	<ul>
+    	<button class="button"><span>Profile </span></button>
+        <button class="button"><span>Lists </span></button>
+        <button class="button"><span>Home </span></button>
+        <button class="button"><span>History </span></button>
+        <button class="button"><span>Cart </span></button>
+    </ul>
+</div>
+
+
+<script>
+	var image = document.getElementById('myImage');
+	var sound = document.getElementById('audio');
+	var temp = document.getElementsByClassName("loginform");
+	var temp1 = document.getElementsByClassName("signup");	
+	
+
+		function changeImage() {
+			image.src = "http://i65.tinypic.com/2s198y8.png";
+			sound.play();
+			setTimeout(stopSound, 1000);
+		}
+		
+		function stopSound() {
+			sound.src = "";
+		}
+		
+		function function1(){
+			temp.style.visibility = 'hidden';
+			temp1.style.visibility = 'visible';
+		}		
+</script>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+
+
+</div>
+</body>
+</html>

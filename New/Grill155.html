@@ -1,0 +1,314 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Grill 155</title>
+<link href="Home.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div class = "content">
+<div class = "Banner">
+	<div class = "Help">
+   	<img id="Help" onclick = "" src = "images/Help.png">
+    </div>
+    <div class = "Logo">
+    <img id="myImage" onclick = "changeImage();playSound()" src = "a.png">
+    </div>
+	<audio id="audio" src="Cartoon_Bite_Sound_Effect.ogg" ></audio>
+    <div class = "Logout">
+    <img id="Logout" onclick = "" src = "images/logout.png">
+    </div>
+</div>
+
+<div class = "Statement" style = "position: absolute; left: 190px; top: 250px;">
+<button class="button" style = "height: 70px; font-size: 18px;" onclick = "changeToStandard()"><span>Popular </span></button>
+<button class="button" style = "height: 70px; font-size: 18px;" onclick = "changeToAlphabetized()"><span>Alphabetized </span></button>
+<button class="button" style = "height: 70px; font-size: 18px;" onclick = "changeToSides()"><span>Sides </span></button>
+</div>
+
+<div class = "middle" id = "M">
+
+<div class = "Popular" id = "p" style = "visibility: visible;">
+<a href = "#"><button class="button" style = "width:100px;height:70px;top:350px;left:140px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;" onclick ="nextPageStandard();"><b>>></b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:130px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;" onclick ="getNutrition();"><b>3-Piece Chicken Tenders</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>5-Piece Chicken Tenders</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:750px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Buffalo Chicken Cheesesteak</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:750px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Cheesesteak Sandwich </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:750px;left:130px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Chicken Cheese Steak </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Burger </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:1000px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Cheeseburger </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:1000px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Grilled Cheese Sandwich </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:1000px;left:130px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Mozzarella </b></button></a>
+
+</div>
+
+<div class = "Popular" id = "p2" style = "visibility: hidden;">
+<a href = "#"><button class="button" style = "width:100px;height:70px;top:350px;left:140px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;" onclick ="backPageStandard();"><b><<</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:130px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;" onclick ="getNutrition();"><b>Sourdough Double Bacon Cheeseburger</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Ultimate Double Cheeseburger</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:750px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Vegan Cutlet Sandwich </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:750px;left:130px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Vegan Buffalo Cutlet Sandwich </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Ultimate Double Hamburger </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Ultimate Double Hamburger </b></button></a>
+</div>
+
+<div class = "alphabetized" id = "a" style = "visibility: hidden;">
+
+<a href = "#"><button class="button" style = "width:100px;height:70px;top:350px;left:140px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;"onclick ="nextPageAlphabetized();"><b>>></b></button></a>
+
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:130px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;" onclick ="getNutrition();"><b>3-Piece Chicken Tenders</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;"onclick ="getNutrition();"><b>5-Piece Chicken Tenders</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:750px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Cheesesteak Sandwich</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:750px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;"onclick ="getNutrition();"><b>Cheeseburger</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:750px;left:130px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Burger</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Buffalo Chicken Cheesesteak</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:1000px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Grilled Cheese Sandwicha </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:1000px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b> Mozzarella</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:1000px;left:130px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Chicken Cheese Steak </b></button></a>
+
+</div>
+
+<div class = "alphabetized" id = "a2" style = "visibility: hidden;">
+<a href = "#"><button class="button" style = "width:100px;height:70px;top:350px;left:140px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;" onclick ="backPageAlphabetized();"><b><<</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:130px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;" onclick ="getNutrition();"><b>Sourdough Double Bacon Cheeseburger</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Ultimate Double Cheeseburger</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:750px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Vegan Cutlet Sandwich </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:750px;left:130px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Vegan Buffalo Cutlet Sandwich </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Ultimate Double Hamburger </b></button></a>
+</div>
+
+<div class = "Sides" id = "sides" style = "visibility: hidden;">
+
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:130px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;" onclick ="getNutrition();"><b>French Fries</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Fountain Beverage</b></button></a>
+
+</div>
+
+<section class="performance-facts" id = "Nutrition" style = "position: absolute; visibility: hidden;top: 600px; left: 375px;">
+  <header class="performance-facts__header">
+	<div class="performance-facts__title" id = "Price">3.49</div>
+    <h1 class="performance-facts__title">Nutrition Facts</h1>
+  </header>
+  <table class="performance-facts__table">
+    <thead>
+      <tr>
+        <th colspan="3" class="small-info">
+          Amount Per Serving <br>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th colspan="2">
+          <b>Calories</b>
+          200<br>
+        </th>
+      </tr>
+      <tr class="thick-row">
+        <td colspan="3" class="small-info">
+          <b>% Daily Value*</b>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <b>Total Fat</b>
+          14g
+        </th>
+        <td>
+          <b>22%</b>
+        </td>
+      </tr>
+      <tr>
+        <td class="blank-cell">
+        </td>
+        <th>
+          Saturated Fat
+          9g
+        </th>
+        <td>
+          <b>22%</b>
+        </td>
+      </tr>
+      <tr>
+        <td class="blank-cell">
+        </td>
+        <th>
+          Trans Fat
+          0g
+        </th>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <b>Cholesterol</b>
+          55mg
+        </th>
+        <td>
+          <b>18%</b>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <b>Sodium</b>
+          40mg
+        </th>
+        <td>
+          <b>2%</b>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <b>Total Carbohydrate</b>
+          17g
+        </th>
+        <td>
+          <b>6%</b>
+        </td>
+      </tr>
+      <tr>
+        <td class="blank-cell">
+        </td>
+        <th>
+          Dietary Fiber
+          1g
+        </th>
+        <td>
+          <b>4%</b>
+        </td>
+      </tr>
+      <tr>
+        <td class="blank-cell">
+        </td>
+        <th>
+          Sugars
+          14g
+        </th>
+        <td>
+        </td>
+      </tr>
+      <tr class="thick-end">
+        <th colspan="2">
+          <b>Protein</b>
+          3g
+        </th>
+        <td>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <a href = "#"><button class="button" id = "add" style = "width:100px;height:100px;top:-200px;left:-230px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px; visibility: hidden" onclick ="getNutrition();"><b>+</b></button></a>
+</section>
+
+
+</div>
+
+<div class = "bottom">
+	<ul>
+    	<button class="button"><span>Profile </span></button>
+        <button class="button"><span>Lists </span></button>
+        <button class="button"><span>Home </span></button>
+        <button class="button"><span>History </span></button>
+        <button class="button"><span>Cart </span></button>
+    </ul>
+</div>
+
+
+<script>
+	var image = document.getElementById('myImage');
+	var sound = document.getElementById('audio');
+	var temp = document.getElementsByClassName("loginform");
+	var temp1 = document.getElementsByClassName("signup");	
+	
+	var alpha = document.getElementById("a");	
+	var alpha2 = document.getElementById("a2");	
+	var pop = document.getElementById("p");	
+	var pop2 = document.getElementById("p2");
+	var side = document.getElementById("sides");
+	var Nutrition = document.getElementById("Nutrition");
+	var M = document.getElementById("M");
+	var add = document.getElementById("add");
+	
+	
+
+		function changeImage() {
+			image.src = "a1.png";
+			sound.play();
+			setTimeout(stopSound, 1000);
+		}
+		
+		function stopSound() {
+			sound.src = "";
+		}
+		
+		function function1(){
+			temp.style.visibility = 'hidden';
+			temp1.style.visibility = 'visible';
+		}	
+
+		function changeToStandard(){
+			alpha.style.visibility = 'hidden';
+			pop.style.visibility = 'visible';
+			pop2.style.visibility = 'hidden';
+			side.style.visibility = 'hidden';
+			Nutrition.style.visibility = 'hidden';
+			add.style.visibility  = 'hidden';
+		}
+		
+		function changeToAlphabetized(){
+			alpha.style.visibility = 'visible';
+			pop.style.visibility = 'hidden';
+			pop2.style.visibility = 'hidden';
+			side.style.visibility = 'hidden';
+			Nutrition.style.visibility ='hidden';
+			add.style.visibility  = 'hidden';
+		}
+		
+		function nextPageStandard(){
+			pop.style.visibility = 'hidden';
+			pop2.style.visibility = 'visible';
+		}
+		
+		function backPageStandard(){
+			pop.style.visibility = 'visible';
+			pop2.style.visibility = 'hidden';
+		}
+		
+		function nextPageAlphabetized(){
+			alpha.style.visibility = 'hidden';
+			alpha2.style.visibility = 'visible';
+		}
+		
+		function backPageAlphabetized(){
+			alpha.style.visibility = 'visible';
+			alpha2.style.visibility = 'hidden';
+		}
+		
+		function changeToSides(){
+			alpha.style.visibility = 'hidden';
+			alpha2.style.visibility = 'hidden';
+			pop.style.visibility = 'hidden';
+			pop2.style.visibility = 'hidden';
+			side.style.visibility = 'visible';
+			Nutrition.style.visibility  = 'hidden';
+			add.style.visibility  = 'hidden';
+		}
+		
+		function getNutrition(){
+			alpha.style.visibility = 'hidden';
+			alpha2.style.visibility = 'hidden';
+			pop.style.visibility = 'hidden';
+			pop2.style.visibility = 'hidden';
+			side.style.visibility = 'hidden';
+			Nutrition.style.visibility = "visible";
+			add.style.visibility  = 'visible';
+		}
+		
+</script>
+
+</div>
+</body>
+</html>

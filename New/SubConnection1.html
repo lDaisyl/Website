@@ -1,0 +1,436 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sub Connection</title>
+<link href="SubConnection.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div class = "content">
+<div class = "Banner">
+	<div class = "Help">
+   	<img id="Help" onclick = "" src = "images/Help.png">
+    </div>
+    <div class = "Logo">
+    <img id="myImage" onclick = "changeImage();playSound()" src = "a.png">
+    </div>
+	<audio id="audio" src="Cartoon_Bite_Sound_Effect.ogg" ></audio>
+    <div class = "Logout">
+    <img id="Logout" onclick = "" src = "images/logout.png">
+    </div>
+</div>
+
+<div class = "Statement" style = "position: absolute; left: 0px; top: 250px;">
+<button class="button" style = "height: 70px; font-size: 18px; padding:0px;" onclick = "changeToStandardHot()">Hot Sandwiches: Popular</button>
+<button class="button" style = "height: 70px; font-size: 18px;padding:0px;" onclick = "changeToAlphabetizedHot()">Hot Sandwiches: Alphabetical</button>
+<button class="button" style = "height: 70px; font-size: 18px;padding:0px;" onclick = "changeToStandardClassic()">Classic Sandwiches: Popular </button>
+<button class="button" style = "height: 70px; font-size: 18px;padding:0px;" onclick = "changeToAlphabetizedClassic()">Classic Sandwiches: Alphabetical </button>
+<button class="button" style = "position: absolute; height: 70px; font-size: 18px;padding:0px; top: 0px; left: 750px;" onclick = "changeToSides()">Sides</button>
+</div>
+
+<div class = "middle" id = "M">
+
+<div class = "PopularClassic" id = "p" style = "visibility: visible;">
+<a href = "#"><button class="button" style = "width:100px;height:70px;top:350px;left:140px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;" onclick ="nextPageClassic1();"><b>>></b></button></a>
+
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:130px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;" onclick ="getNutrition();"><b>BLT</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Italian Sub</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:750px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b> California Smoked Turkey</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:750px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Ham & Cheese Sub </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:750px;left:130px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Turkey and Ham Club</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Chicken Salad Sub </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:1000px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Three Cheese Sub </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:1000px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b> Egg Salad Sub</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:1000px;left:130px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Roast Beef Sub </b></button></a>
+
+</div>
+
+<div class = "PopularClassic" id = "p2" style = "visibility: hidden;">
+<a href = "#"><button class="button" style = "width:100px;height:70px;top:350px;left:140px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;" onclick ="backPageStandard1();"><b><<</b></button></a>
+
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:130px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;" onclick ="getNutrition();"><b>Tuna Salad Sub </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Vegetarian Sub</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Veggie Wrap </b></button></a>
+</div>
+
+<div class = "alphabetizedClassic" id = "a" style = "visibility: hidden;">
+
+<a href = "#"><button class="button" style = "width:100px;height:70px;top:350px;left:140px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;"onclick ="nextPageAlphabetizedClassic();"><b>>></b></button></a>
+
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:130px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;" onclick ="getNutrition();"><b>BLT</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>California Smoked Turkey</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:750px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Italian Sub</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:750px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Ham & Cheese Sub </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:750px;left:130px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Egg Salad Sub</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Chicken Salad Sub </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:1000px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Three Cheese Sub </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:1000px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Tuna Salad Sub </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:1000px;left:130px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Roast Beef Sub </b></button></a>
+
+</div>
+
+<div class = "alphabetizedClassic" id = "a2" style = "visibility: hidden;">
+<a href = "#"><button class="button" style = "width:100px;height:70px;top:350px;left:140px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;" onclick ="backPageAlphabetizedClassic();"><b><<</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:130px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;" onclick ="getNutrition();"><b>Turkey and Ham Club</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Vegetarian Sub</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Veggie Wrap </b></button></a>
+</div>
+
+<div class = "PopularHot" id = "pHot" style = "visibility: visible;">
+<a href = "#"><button class="button" style = "width:100px;height:70px;top:350px;left:140px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;" onclick ="PopHotNext();"><b>>></b></button></a>
+
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:130px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;" onclick ="getNutrition();"><b>Chicken Parmesan Sub</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>BBQ Crispy Chicken</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:750px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Chicken Caesar Sub</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:750px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Chicken Bacon Ranch</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:750px;left:130px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Buffalo Chicken Sub</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Meatball Sub </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:1000px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Baja Chicken</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:1000px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Reduced Fat Buffalo Chicken SUb </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:1000px;left:130px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Avocado BLT  Flatbread</b></button></a>
+
+</div>
+
+<div class = "PopularHot" id = "pHot2" style = "visibility: hidden;">
+<a href = "#"><button class="button" style = "width:100px;height:70px;top:350px;left:140px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;" onclick ="PopHotBack();"><b><<</b></button></a>
+
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:130px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;" onclick ="getNutrition();"><b>Reduced Fat Chicken Parm Sub</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Vegetarian Sub</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Veggie Wrap </b></button></a>
+</div>
+
+<div class = "alphabetizedHot" id = "aHot" style = "visibility: hidden;">
+
+<a href = "#"><button class="button" style = "width:100px;height:70px;top:350px;left:140px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;"onclick ="AlphaHotNext();"><b>>></b></button></a>
+
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:130px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;" onclick ="getNutrition();"><b>Avocado BLT  Flatbread</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Baja Chicken</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:750px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Chicken Caesar Sub</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:750px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Chicken Bacon Ranch</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:750px;left:130px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Buffalo Chicken Sub</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>BBQ Crispy Chicken </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:1000px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Meatball Sub </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:1000px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Reduced Fat Buffalo Chicken SUb </b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:1000px;left:130px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Chicken Parmesan Sub</b></button></a>
+
+</div>
+
+<div class = "alphabetizedHot" id = "aHot2" style = "visibility: hidden;">
+<a href = "#"><button class="button" style = "width:100px;height:70px;top:350px;left:140px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;" onclick ="AlphaHotBack();"><b><<</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:130px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;" onclick ="getNutrition();"><b>Reduced Fat Chicken Parm Sub</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Vegetarian Sub</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:600px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Veggie Wrap </b></button></a>
+</div>
+
+<div class = "Sides" id = "sides" style = "visibility: hidden;">
+
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:130px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px;" onclick ="getNutrition();"><b>French Fries</b></button></a>
+<a href = "#"><button class="button" style = "width:170px;height:100px;top:503px;left:365px;position: absolute;background-color: #68A362;font-size: 22px;padding:0px;" onclick ="getNutrition();"><b>Fountain Beverage</b></button></a>
+
+</div>
+
+<section class="performance-facts" id = "Nutrition" style = "position: absolute; visibility: hidden;top: 600px; left: 375px;">
+  <header class="performance-facts__header">
+	<div class="performance-facts__title" id = "Price">3.49</div>
+    <h1 class="performance-facts__title">Nutrition Facts</h1>
+  </header>
+  <table class="performance-facts__table">
+    <thead>
+      <tr>
+        <th colspan="3" class="small-info">
+          Amount Per Serving <br>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th colspan="2">
+          <b>Calories</b>
+          200<br>
+        </th>
+      </tr>
+      <tr class="thick-row">
+        <td colspan="3" class="small-info">
+          <b>% Daily Value*</b>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <b>Total Fat</b>
+          14g
+        </th>
+        <td>
+          <b>22%</b>
+        </td>
+      </tr>
+      <tr>
+        <td class="blank-cell">
+        </td>
+        <th>
+          Saturated Fat
+          9g
+        </th>
+        <td>
+          <b>22%</b>
+        </td>
+      </tr>
+      <tr>
+        <td class="blank-cell">
+        </td>
+        <th>
+          Trans Fat
+          0g
+        </th>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <b>Cholesterol</b>
+          55mg
+        </th>
+        <td>
+          <b>18%</b>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <b>Sodium</b>
+          40mg
+        </th>
+        <td>
+          <b>2%</b>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <b>Total Carbohydrate</b>
+          17g
+        </th>
+        <td>
+          <b>6%</b>
+        </td>
+      </tr>
+      <tr>
+        <td class="blank-cell">
+        </td>
+        <th>
+          Dietary Fiber
+          1g
+        </th>
+        <td>
+          <b>4%</b>
+        </td>
+      </tr>
+      <tr>
+        <td class="blank-cell">
+        </td>
+        <th>
+          Sugars
+          14g
+        </th>
+        <td>
+        </td>
+      </tr>
+      <tr class="thick-end">
+        <th colspan="2">
+          <b>Protein</b>
+          3g
+        </th>
+        <td>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <a href = "#"><button class="button" id = "add" style = "width:100px;height:100px;top:-200px;left:-230px;position: absolute;background-color: #68A362;font-size: 22px; padding:0px; visibility: hidden" onclick ="getNutrition();"><b>+</b></button></a>
+</section>
+
+
+</div>
+
+<div class = "bottom">
+	<ul>
+    	<button class="button"><span>Profile </span></button>
+        <button class="button"><span>Lists </span></button>
+        <button class="button"><span>Home </span></button>
+        <button class="button"><span>History </span></button>
+        <button class="button"><span>Cart </span></button>
+    </ul>
+</div>
+
+
+<script>
+	var image = document.getElementById('myImage');
+	var sound = document.getElementById('audio');
+	var temp = document.getElementsByClassName("loginform");
+	var temp1 = document.getElementsByClassName("signup");	
+	
+	var alpha = document.getElementById("a");	
+	var alpha2 = document.getElementById("a2");	
+	var pop = document.getElementById("p");	
+	var pop2 = document.getElementById("p2");
+	var alphahot = document.getElementById("aHot");	
+	var alphahot2 = document.getElementById("aHot2");	
+	var pophot = document.getElementById("pHot");	
+	var pophot2 = document.getElementById("pHot2");
+	var side = document.getElementById("sides");
+	
+	var Nutrition = document.getElementById("Nutrition");
+	var M = document.getElementById("M");
+	var add = document.getElementById("add");
+	
+	
+
+		function changeImage() {
+			image.src = "a1.png";
+			sound.play();
+			setTimeout(stopSound, 1000);
+		}
+		
+		function stopSound() {
+			sound.src = "";
+		}
+		
+		function function1(){
+			temp.style.visibility = 'hidden';
+			temp1.style.visibility = 'visible';
+		}	
+		
+		function changeToStandardClassic(){
+			alpha.style.visibility = 'hidden';
+			alpha2.style.visibility = 'hidden';
+			pop2.style.visibility = 'hidden';
+			side.style.visibility = 'hidden';
+			Nutrition.style.visibility = 'hidden';
+			add.style.visibility  = 'hidden';
+			alphahot.style.visibility = 'hidden';
+			alphahot2.style.visibility = 'hidden';
+			pophot.style.visibility = 'hidden';
+			pophot2.style.visibility = 'hidden';
+			
+			//setTimeout(function(){ pop.style.visibility = 'visible';}, 3000);
+			pop.style.visibility = 'visible';
+		}
+		
+		function changeToStandardHot(){
+			alpha.style.visibility = 'hidden';
+			alpha2.style.visibility = 'hidden';
+			pop2.style.visibility = 'hidden';
+			side.style.visibility = 'hidden';
+			Nutrition.style.visibility = 'hidden';
+			add.style.visibility  = 'hidden';
+			pop.style.visibility = 'hidden';
+			alphahot2.style.visibility = 'hidden';
+			alphahot.style.visibility = 'hidden';
+			pophot2.style.visibility = 'hidden';
+			
+			pophot.style.visibility = 'visible';
+		}
+
+		
+		function changeToAlphabetizedHot(){
+			alpha.style.visibility = 'hidden';
+			alpha2.style.visibility = 'hidden';
+			pop.style.visibility = 'hidden';
+			pop2.style.visibility = 'hidden';
+			side.style.visibility = 'hidden';
+			Nutrition.style.visibility = 'hidden';
+			add.style.visibility  = 'hidden';
+			alphahot.style.visibility = 'hidden';
+			pophot.style.visibility = 'hidden';
+			pophot2.style.visibility = 'hidden';
+			
+			alphahot.style.visibility = 'visible';
+			
+		}
+		
+		function changeToAlphabetizedClassic(){
+			alphahot.style.visibility = 'hidden';
+			alpha2.style.visibility = 'hidden';
+			pop.style.visibility = 'hidden';
+			pop2.style.visibility = 'hidden';
+			side.style.visibility = 'hidden';
+			Nutrition.style.visibility = 'hidden';
+			add.style.visibility  = 'hidden';
+			alphahot.style.visibility = 'hidden';
+			pophot.style.visibility = 'hidden';
+			pophot2.style.visibility = 'hidden';
+			
+			alpha.style.visibility = 'visible';
+			
+		}
+		
+		function nextPageClassic1(){
+			pop.style.visibility = 'hidden';
+			pop2.style.visibility = 'visible';
+		}
+		
+		function backPageStandard1(){
+			pop.style.visibility = 'visible';
+			pop2.style.visibility = 'hidden';
+		}
+		
+		
+		function nextPageAlphabetizedClassic(){
+			alpha.style.visibility = 'hidden';
+			alpha2.style.visibility = 'visible';
+		}
+		
+		function backPageAlphabetizedClassic(){
+			alpha.style.visibility = 'visible';
+			alpha2.style.visibility = 'hidden';
+		}
+		
+		function PopHotNext(){
+			pophot.style.visibility = 'hidden';
+			pophot2.style.visibility = 'visible';
+		}
+		
+		function PopHotBack(){
+			pophot.style.visibility = 'visible';
+			pophot2.style.visibility = 'hidden';
+		}
+		
+		function AlphaHotNext(){
+			alphahot.style.visibility = 'hidden';
+			alphahot2.style.visibility = 'visible';
+		}
+		
+		function AlphaHotBack(){
+			alphahot.style.visibility = 'visible';
+			alphahot2.style.visibility = 'hidden';
+		}
+		
+		
+		
+		
+		
+		
+		function changeToSides(){
+			alpha.style.visibility = 'hidden';
+			alpha2.style.visibility = 'hidden';
+			pop.style.visibility = 'hidden';
+			pop2.style.visibility = 'hidden';
+			side.style.visibility = 'visible';
+			Nutrition.style.visibility  = 'hidden';
+			add.style.visibility  = 'hidden';
+		}
+		
+		function getNutrition(){
+			alpha.style.visibility = 'hidden';
+			alpha2.style.visibility = 'hidden';
+			pop.style.visibility = 'hidden';
+			pop2.style.visibility = 'hidden';
+			side.style.visibility = 'hidden';
+			Nutrition.style.visibility = "visible";
+			add.style.visibility  = 'visible';
+		}
+		
+</script>
+
+</div>
+</body>
+</html>
